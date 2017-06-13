@@ -28,9 +28,8 @@ Initialize the Webphone:
 ```js
 var webphone = new SipgateWebphone();
 webphone.init({
-  deprecatedUsername: 'sipgateUsername', // This will be replaced with OAuth2 in future releases
-  deprecatedPassword: 'sipgatePassword', // This will be replaced with OAuth2 in future releases
   container: document.getElementById('sipgate-webphone-container'),
+  clientId: 'CLIENT_ID'
 });
 ```
 
