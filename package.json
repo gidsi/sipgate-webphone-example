@@ -1,0 +1,11 @@
+{
+  "name": "sipgate-webphone-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve"
+  },
+  "dependencies": {
+    "serve": "^5.1.5"
+  }
+}

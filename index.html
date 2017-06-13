@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sipgate Webphone</title>
+    <script src="https://static.sipgate.com/js/webphone/v1/webphone.js"></script>
+  </head>
+  <body>
+    <button onclick="webphone.call('+4915799912345')">
+      Call demo.sipgate.io
+    </button>
+
+    <div id='sipgate-webphone-container' style="height: 600px; width: 400px;"></div>
+
+    <script charset="utf-8">
+      var container = document.getElementById('sipgate-webphone-container');
+      var webphone = new SipgateWebphone();
+      webphone.init({
+        container: container,
+        clientId: 'sipgate-webphone-example'
+      });
+    </script>
+  </body>
+</html>
