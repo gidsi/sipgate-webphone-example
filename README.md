@@ -1,6 +1,8 @@
 sipgate Webphone Example
 ========================
 
+The sipgate webphone is a fully fledged VoIP client running inside your browser. With the API you can use it so simply add telephony functionality to your own application.
+
 Demo
 ----
 
