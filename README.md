@@ -43,3 +43,12 @@ You can use the `call(e164PhoneNumber)` method to start a call:
 ```js
 webphone.call('+4915799912345'); // You have to provide a valid E164 phone number
 ```
+
+Content-Security-Policy
+-----------------------
+
+If you configured your webserver to use the [Content-Security-Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) header, the webphone will not work. You need to add the following directive to your existing CSP header configuration:
+
+```
+script-src *.sipgate.com; frame-src *.sipgate.com;
+```
