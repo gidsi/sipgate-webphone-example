@@ -16,7 +16,7 @@ Slow Start
 
 Include the Webphone from sipgate's CDN:
 ```html
-<script src="https://static.sipgate.com/js/webphone/v1/webphone.js"></script>
+<script src="https://phone.sipgate.com/static/js/webphone.js"></script>
 ```
 
 Create a wrapping container:
