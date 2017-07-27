@@ -31,7 +31,9 @@ Create a wrapping container:
 <div id='sipgate-webphone-container' style="height: 600px; width: 400px;"></div>
 ```
 
-Initialize the Webphone:
+Get a *client ID* by [filling out the form](https://goo.gl/ePNNXz).
+
+Initialize the webphone with your client ID:
 ```js
 var webphone = new SipgateWebphone();
 webphone.init({
@@ -39,6 +41,8 @@ webphone.init({
   clientId: 'CLIENT_ID'
 });
 ```
+
+
 
 You are now ready to start and receive calls. :tada:
 
