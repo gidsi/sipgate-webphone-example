@@ -1,15 +1,13 @@
-sipgate Webphone Example
-========================
+# sipgate Webphone Example
 
 The sipgate webphone is a fully fledged VoIP client running inside your browser. With the API you can use it so simply add telephony functionality to your own application.
 
-Demo
-----
+## Demo
 
 You find a demo at [sipgate.github.io/sipgate-webphone-example/](https://sipgate.github.io/sipgate-webphone-example/).
 
-Quick Start
------------
+
+## Quick Start
 
 ```shell
 npm install
@@ -18,8 +16,7 @@ open localhost:5000
 ```
 
 
-Slow Start
-----------
+## Slow Start
 
 Include the Webphone from sipgate's CDN:
 ```html
@@ -47,16 +44,14 @@ webphone.init({
 You are now ready to start and receive calls. :tada:
 
 
-Start a call using JavaScript
------------------------------
+## Start a call using JavaScript
 
 You can use the `call(e164PhoneNumber)` method to start a call:
 ```js
 webphone.call('+4915799912345'); // You have to provide a valid E164 phone number
 ```
 
-Content-Security-Policy
------------------------
+## Content-Security-Policy
 
 If you configured your webserver to use the [Content-Security-Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) header, the webphone will not work. You need to add the following directive to your existing CSP header configuration:
 
