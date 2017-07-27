@@ -51,6 +51,51 @@ You can use the `call(e164PhoneNumber)` method to start a call:
 webphone.call('+4915799912345'); // You have to provide a valid E164 phone number
 ```
 
+## Call events
+
+Once the webphone is initialized you can receive and handle events to e.g. augment the phone's UI with additional data.
+
+### Ring incoming
+
+When the phone is ringing to signalise an incoming call, you will receive a `ringIncoming` event. You can handle it like this:
+
+```js
+webphone.on('ringIncoming', function(meta){ console.log('ringing incoming from ' + meta.remote); });
+```
+
+### Dialing
+
+When the phone is dialing to establish an external call, you will receive a `dial` event. You can handle it like this:
+
+```js
+webphone.on('dial', function(meta){ console.log('dialing to ' + meta.remote); });
+```
+
+### Ring outgoing
+
+When the phone is ringing while trying to establish an external call, you will receive a `ringOutgoing` event. You can handle it like this:
+
+```js
+webphone.on('ringOutgoing', function(meta){ console.log('ringing outgoing to ' + meta.remote); });
+```
+
+### Speak
+
+When a call is established, you will receive a `speak` event. You can handle it like this:
+
+```js
+webphone.on('speak', function(meta){ console.log('speaking to ' + meta.remote); });
+```
+
+### End
+
+When a call or call attempt is ended, you will receive an `end` event. You can handle it like this:
+
+```js
+webphone.on('end', function(){ console.log('call ended'); });
+```
+
+
 ## Content-Security-Policy
 
 If you configured your webserver to use the [Content-Security-Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) header, the webphone will not work. You need to add the following directive to your existing CSP header configuration:
