@@ -28,7 +28,7 @@ Create a wrapping container:
 <div id='sipgate-webphone-container' style="height: 600px; width: 400px;"></div>
 ```
 
-Get a *client ID* by [filling out the form](https://goo.gl/ePNNXz).
+Get a *client ID* by [following the instructions to create a third-party client](https://sipgate.readme.io/v2.0/docs/managing-third-party-clients-using-the-command-line).
 
 Initialize the webphone with your client ID:
 ```js
